@@ -3,6 +3,7 @@ const form = document.getElementById("form");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   tableInsert();
+
 });
 
 function tableInsert() {
@@ -60,6 +61,9 @@ function tableInsert() {
     deleteButton.addEventListener("click", (event) => {
       event.target.parentNode.parentNode.remove();
     });
+
+    form.reset();
   }
 }
+
 //fin
